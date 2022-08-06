@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         setUpListeners()
         setUpFirebase()
         fetchRemoteConfig()
-        setupVisualToogle()
+        setupVisualToggle()
     }
 
     private fun setUpListeners() {
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupVisualToogle() {
+    private fun setupVisualToggle() {
         binding.content.card.apply {
             isVisible = checkFeatureToogle(FEATURE_A)
         }
